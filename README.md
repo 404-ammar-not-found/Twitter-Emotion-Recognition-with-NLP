@@ -1,6 +1,5 @@
 # 🧠 Emotion Recognition in Python
 
-
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg?logo=pytorch)
 ![HuggingFace](https://img.shields.io/badge/🤗-Transformers-yellow.svg)
@@ -24,7 +23,6 @@ It combines **Transformer-based tokenization** with a **custom BiLSTM architectu
 
 ## 🏗️ Architectures
 
-<details>
 <summary>🔹 BiLSTM Classifier</summary>
 
 ```python
@@ -43,7 +41,6 @@ class BiLSTMClassifier(nn.Module):
         h_final = torch.cat((h[-2], h[-1]), dim=1)
         return self.fc(h_final)
 ```
-</details>
 
 # ⚙️ Setup
 ## Clone repo
@@ -55,8 +52,7 @@ cd modernised-emotion-recognition
 
 # Install dependencies
 ```python
-pip install torch torchvision torchaudio
-pip install transformers datasets matplotlib scikit-learn
+pip install torch torchvision torchaudio transformers datasets matplotlib
 ```
 
 # 🚀 Training
